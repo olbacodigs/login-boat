@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+<head>
+	<title>Faça Login</title>
+</head>
+	<body>
+		<center>
+			<div>
+		
+	<form method="get" action="paginadousuario.html">
+		
+		<input type="email" name="caixaEmail" class="caixas" minlength="5" maxlength="50" placeholder="E-mail"/><br/>
+		<input type="password" name="caixaSenha" class="caixas" minlength="5" maxlength="30" placeholder="********"/><br/>
+		
+		<input class="botao" type="submit" value="Entrar"/>
+		
+			<br/><a class="botao" href="cadastre.php">Cadastre-se</a>
+		
+	</form>
+			</div>
+		</center>
+	</body>
+</html>
+
+<!--=============CSS=============-->
+
+<style>
+
+body{
+	background: url(fundo-boats.jpeg) no-repeat center fixed;
+	background-size: cover;
+}
+
+div{
+display: flex;	
+justify-content: center;
+background: rgba(50,100,0,0.1); 
+width: 500px;
+height: 500px;
+border-radius: 50%;
+transition: 1s;
+vertical-align: center;
+box-shadow: 0px 10px 10px black;
+}
+
+div:hover{
+	background: rgba(50,100,0,0.3);
+}
+
+form{
+	 margin-top: 100px;
+	 justify-content: center;
+}
+
+input{
+	margin-top: 20px
+}
+
+input.caixas{
+	border-radius: 20px;
+	width: 200pt;
+	height: 20pt;
+	color: #ffffff;
+
+}
+
+.botao{
+	size: 20px;
+	text-decoration: none;
+	background: rgba(0,10,10,0.7);
+	color: #ffffff; 
+	border: none;
+	font-family: sans-serif;
+	padding: 10px;
+	border-radius: 75%;
+	
+}
+
+a{	
+	display: block;
+	margin: 75px auto;
+}
+
+.botao:hover{
+background: rgba(50,100,0,0.5);
+}
+
+</style>
